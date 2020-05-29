@@ -5,14 +5,14 @@
 @using HairSalon.Models;
 @model HairSalon.Models.Stylist;
 <div class="card">
-<h3>About this Stylist</h3>
+<h1>About this Stylist</h1>
 
-<h3>@Html.DisplayFor(model => model.Name)</h3>
-<h3>Date Hired: @Model.DateHired.Date</h3>
-<h3>@Html.DisplayNameFor(model => model.Specialties): @Html.DisplayFor(model => model.Specialties).</h3>
+<h2><strong>@Html.DisplayFor(model => model.Name)</strong></h2>
+<h3><strong>Date Hired:</strong> @Model.DateHired.Date</h3>
+<h3><strong>@Html.DisplayNameFor(model => model.Specialties):</strong> @Html.DisplayFor(model => model.Specialties).</h3>
 </div>
-
-<h3>Clients:</h3>
+<center>
+<h2>Clients:</h2>
 
   @if (@Model.Clients.Count == 0)
   {
@@ -28,5 +28,6 @@
     <strong>Notes:</strong> @client.Notes
     </div>
   }
+  </center>
   </div>
 
