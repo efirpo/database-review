@@ -6,6 +6,11 @@ body {
 a {
   color: #FFF;
 }
+a:hover
+{
+  color: #ffedb6;
+  text-decoration: none;
+}
 .client {
   background-color: #ffedb6;
   padding-top: 1%;
@@ -15,6 +20,9 @@ a {
   margin: 1%;
   width:20%;
   border-radius: 15px;
+}
+.stylist-info {
+color: #512779;
 }
 
 div#footer {

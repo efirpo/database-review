@@ -7,9 +7,9 @@
 <div class="card">
 <h1>About this Stylist</h1>
 
-<h2><strong>@Html.DisplayFor(model => model.Name)</strong></h2>
-<h3><strong>Date Hired:</strong> @Model.DateHired.Date</h3>
-<h3><strong>@Html.DisplayNameFor(model => model.Specialties):</strong> @Html.DisplayFor(model => model.Specialties).</h3>
+<h2><span class="stylist-info"><strong>@Html.DisplayFor(model => model.Name)</strong></span></h2>
+<h3><strong>Date Hired:</strong> <span class="stylist-info">@Model.DateHired.ToShortDateString()</span></h3>
+<h3><strong>@Html.DisplayNameFor(model => model.Specialties):</strong> <span class="stylist-info">@Html.DisplayFor(model => model.Specialties)</span></h3>
 </div>
 
 <center><h2>Clients:</h2></center>

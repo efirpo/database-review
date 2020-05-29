@@ -36,6 +36,7 @@ namespace HairSalon.Controllers
     {
       Stylist thisStylist = _db.Stylists.FirstOrDefault(stylists => stylists.StylistId == id);
       thisStylist.Clients = _db.Clients.Where(client => client.StylistId == id).ToList();
+      // ViewBag.ShortDateString = thisStylist.DateHired.ToShortDateString();
       return View(thisStylist);
     }
 
