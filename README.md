@@ -11,7 +11,9 @@ This site is built to review database functions using MySQL and Entity Core Fram
 1. Clone this repository from GitHub.
 2. Open the downloaded directory in a text editor of your choice. (VSCode, Atom, etc.)
 3. To install the REPL dotnet script, run dotnet tool install -g dotnet-script in your terminal.
-4. Run the program with the commands dotnet restore, dotnet build, and dotnet run.
+4. If you do not have MySQL Community Server installed, go to https://www.learnhowtoprogram.com/c-and-net/getting-started-with-c/installing-and-configuring-mysql and follow along with the instructions for your operating system.
+5. In your terminal, start MySQL by typing "mysql -uroot -pYourPasswordHere", then cut and paste the commands found in ethan_firpo.sql in the root directory of this project.
+5. Navigate to the directory HairSalon/ and run the program with the commands dotnet restore, dotnet build, and dotnet run.
 
 ## Technology
 
