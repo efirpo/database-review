@@ -8,15 +8,21 @@
 <h3>About this Stylist</h3>
 
 <h3>@Html.DisplayFor(model => model.Name)</h3>
-<h3>@Html.DisplayNameFor(model => model.DateHired): @Html.DisplayFor(model => model.DateHired)</h3>
+<h3>Date Hired: @Model.DateHired.Date</h3>
+<h3>@Html.DisplayNameFor(model => model.Specialties): @Html.DisplayFor(model => model.Specialties).</h3>
 <h3>Clients:</h3>
 <ul>
   @if (@Model.Clients.Count == 0)
   {
-    <h4>Sorry, this stylist has no current clients.</h4>
+    <h4>This stylist has no current clients.</h4>
+    @Html.ActionLink("Add a client", "Create", "Clients")
   }
   @foreach (Client client in @Model.Clients)
   {
     <li>@client.Name</li>
+    <li>Notes: @client.Notes</li>
   }
 </ul>
+@Html.ActionLink("Add new client", "Create", "Clients")
+@Html.ActionLink("Back to Stylists", "Index")
+

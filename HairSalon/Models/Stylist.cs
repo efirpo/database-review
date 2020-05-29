@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using System;
+using System.Linq;
 
 namespace HairSalon.Models
 {
@@ -8,10 +10,12 @@ namespace HairSalon.Models
     {
       this.Clients = new HashSet<Client>();
     }
-    public string Name { get; set; }
+
+    public int StylistId { get; set; }
     public DateTime DateHired { get; set; }
     public string Specialties { get; set; }
+    public string Name { get; set; }
     public virtual ICollection<Client> Clients { get; set; }
-    public int StylistId { get; set; }
+
   }
 }
