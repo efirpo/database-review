@@ -1,11 +1,10 @@
 @{
   Layout = "_Layout";
 }
-@using HairSalon.Models;
 @model HairSalon.Models.Client;
 
 <h3>Add a new client</h3>
-@if (Model.Stylist.Count == 0)
+@if (ViewBag.Stylists.Count == 0)
 {
   <h1>We're sorry, you must add a stylist before adding any clients.</h1>
 }

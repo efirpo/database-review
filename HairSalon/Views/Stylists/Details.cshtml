@@ -23,13 +23,10 @@
   }
   @foreach (Client client in @Model.Clients)
   {
-    <div class="card">
+    <div class="card client animated bounceInBottom">
     <h3>@client.Name</h3>
     <strong>Notes:</strong> @client.Notes
     </div>
   }
   </div>
-
-@Html.ActionLink("Add new client", "Create", "Clients")
-@Html.ActionLink("Back to Stylists", "Index")
 

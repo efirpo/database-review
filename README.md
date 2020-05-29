@@ -4,7 +4,7 @@
 
 ## Description
 
-This site is built to review database functions using MySQL and Entity Core Framework. It allows a user make entries for stylists and clients associated with those stylists, then view that data at their leisure.
+This site is built to review database functions using MySQL and Entity Core Framework in Epicodus' C# and .NET course. It allows a user to make entries for stylists and clients associated with those stylists, then view that data at their leisure.
 
 ## Setup
 

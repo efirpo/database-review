@@ -6,13 +6,17 @@ body {
 a {
   color: #FFF;
 }
-
-div#header {
+client {
+  background-color: #7733ff;
+}
+div#footer {
   position:fixed;
-  top: 0px;
+  bottom: 0px;
   margin: 0 auto;
-  width: 100%;
-  background-color: #b793ff
+  width: 50%;
+  color: #b793ff;
+  background-color: black;
+  text-align: center;
 }
 
 div#entry {
