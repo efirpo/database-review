@@ -4,7 +4,7 @@
 
 @using HairSalon.Models;
 @model List<HairSalon.Models.Stylist>;
-
+<div>
 <h1>Current Stylists</h1>
 
 <ul>
@@ -17,5 +17,8 @@
 {
   <h3>No stylists have been Added. Please add some stylists.</h3>
 }
+</div>
 <br>
+<div>
 <p>@Html.ActionLink("Add new Stylist", "Create")</p>
+</div>

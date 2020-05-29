@@ -17,10 +17,20 @@ div#header {
 
 div#entry {
   display: flex;
-  position: fixed;
-  bottom: 50%;
-  margin: auto 0;
-  justify-content: center;
-  width: 100%;
+  align-content: center;
+  flex-direction: column;
+  background-color: #b793ff;
+  color:black;
+  margin: 2%;
+  padding: 5%;
+}
 
+clients
+{
+  display:flex;
+  flex-direction: row;
+}
+
+#logo {
+  width:70%;
 }
