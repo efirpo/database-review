@@ -18,7 +18,6 @@ This site is built to review database functions using MySQL and Entity Core Fram
 #### HTML
 #### CSS
 #### Bootstrap Style Library
-#### AnimateCSS Style Library
 #### C#
 #### ASP.NET Core
 #### Entity Core Framework
