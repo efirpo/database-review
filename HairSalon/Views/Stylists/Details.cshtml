@@ -11,9 +11,9 @@
 <h3><strong>Date Hired:</strong> @Model.DateHired.Date</h3>
 <h3><strong>@Html.DisplayNameFor(model => model.Specialties):</strong> @Html.DisplayFor(model => model.Specialties).</h3>
 </div>
-<center>
-<h2>Clients:</h2>
 
+<center><h2>Clients:</h2></center>
+<div id="flexbox">
   @if (@Model.Clients.Count == 0)
   {
     <div class="card">
@@ -23,11 +23,11 @@
   }
   @foreach (Client client in @Model.Clients)
   {
-    <div class="card client animated bounceInBottom">
+    <div class="card client">
     <h3>@client.Name</h3>
     <strong>Notes:</strong> @client.Notes
     </div>
   }
-  </center>
   </div>
+  
 

@@ -6,8 +6,14 @@ body {
 a {
   color: #FFF;
 }
-client {
-  background-color: #7733ff;
+.client {
+  background-color: #ffedb6;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  padding-right:1%;
+  padding-left:1%;
+  margin: 1%;
+  width:20%;
 }
 
 div#footer {
@@ -21,14 +27,18 @@ div#footer {
   font-size:18px;
 }
 
-div#entry {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+div#overlay {
   background-color: #b793ff;
   color:black;
   margin: 2%;
   padding: 5%;
+}
+
+div#flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 #logo {
