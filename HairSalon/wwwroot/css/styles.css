@@ -17,7 +17,7 @@ div#header {
 
 div#entry {
   display: flex;
-  align-content: center;
+  justify-content: center;
   flex-direction: column;
   background-color: #b793ff;
   color:black;
