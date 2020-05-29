@@ -9,12 +9,13 @@
 {
   @Html.LabelFor(model => model.Name)
   @Html.TextBoxFor(model => model.Name)
-  @Html.LabelFor(model => model.DateHired)
+  <br><br>
+  @Html.Label("Date Hired:")
   @Html.TextBoxFor(model =>model.DateHired, "{0:yyyy-MM-dd}", new {type="date"})
+  <br><br>
   @Html.LabelFor(model => model.Specialties)
   @Html.TextBoxFor(model => model.Specialties)
-  <br>
+  <br><br>
   <input type="submit" value="Add Stylist"/>
 }
 <br>
-<p>@Html.ActionLink("Show all Stylists", "Index")</p>
