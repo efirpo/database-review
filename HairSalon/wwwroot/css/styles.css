@@ -20,6 +20,7 @@ a:hover
   margin: 1%;
   width:20%;
   border-radius: 15px;
+  border: ridge #ffedb6;
 }
 .stylist-info {
 color: #512779;
@@ -40,7 +41,10 @@ div#overlay {
   background-color: #b793ff;
   color:black;
   margin: 2%;
+  margin-bottom: 5%;
   padding: 5%;
+  border-radius: 15px;
+  border: 6px ridge #ffedb6;
 }
 
 div#flexbox {
