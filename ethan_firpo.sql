@@ -1,5 +1,7 @@
 CREATE DATABASE `ethan_firpo` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */;
 
+USE ethan_firpo;
+
 CREATE TABLE `clients` (
   `ClientId` int(11) NOT NULL AUTO_INCREMENT,
   `Name` varchar(255) DEFAULT NULL,
